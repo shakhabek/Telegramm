@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_camera_alt_24"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/foydalanuvchi_ismi"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/black"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Ismingiz (Shart emas)"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textSize="30sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/foydalanuvchi_familyasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/foydalanuvchi_familyasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Familyangiz (shart emas)"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="25sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/foydalanuvchi_sharxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/foydalanuvchi_sharxi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Familyangiz (shart emas)"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="25sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/success"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#0ED316"
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
